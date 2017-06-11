@@ -200,7 +200,14 @@ h2 {
 h3 {}
 h4 {}
 h5 {}
-h6 {}
+h6 {
+	font-size: 1.5em;
+	a {
+  	color: rgba(30,174,219,1); }
+
+	a:hover {
+  	color: #555; }
+}
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -233,10 +240,10 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: rgba(30,174,219,1); }
+  color: #555; }
 
 a:hover {
-  color: rgba(30,174,219,.8); }
+  color: #111; }
 
 
 /* Buttons
