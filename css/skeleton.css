@@ -160,10 +160,10 @@ body {
   }
 
 ::-moz-selection {
-  background: rgba(255,255,255,.25); /* Gecko Browsers */
+  background: rgba(0,0,0,.5); /* Gecko Browsers */
   }
 ::selection {
-  background: rgba(255,255,255,.25); /* WebKit/Blink Browsers */
+  background: rgba(0,0,0,.5); /* WebKit/Blink Browsers */
   }
 
 /* Typography
