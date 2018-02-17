@@ -13,18 +13,6 @@
   gtag('config', 'UA-114359040-1');
 </script>
 
-<script>
-function trackOutboundLink(url) {
-    var params = {};
-    params.hitCallback = function () {
-        window.open(url);
-    }
-    ga("send", "event", "outbound", "click", url, params);
-    return false;
-}
-</script>
-
-
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,6 +42,8 @@ function trackOutboundLink(url) {
 </head>
 
 <body>
+
+
 	<div class="container" id="index-main">
   	<div class="row">
 	    <div class="six columns" id="name"></div>
@@ -70,9 +60,7 @@ function trackOutboundLink(url) {
  			<li><a href="https://www.flickr.com/photos/coopersmith/albums/72157685303904136" target="_blank">Japan</a> (2016)</li>
  			<li>Newfoundland (2015)</li>
   			<li><a href="https://www.flickr.com/photos/coopersmith/albums/72157659930617055" target="_blank" onlick="gaTrackEvent('eventCategory', 'eventAction', 'eventLabel');">🚁 NYC 🚁</a> (2015)</li>
-  			<li><a href="http://www.example.com" onclick="trackOutboundLink('http://www.example.com'); return true;">Check out example.com</a></li>
-  			 </li><a href="http://www.espn.com" target="_blank" onclick="trackOutboundLink('http://www.espn.com');">SCheck out example.com</a></li>
-
+  
 
 			</ul>
 			</p>
