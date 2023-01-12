@@ -30,7 +30,7 @@
 /* @font-face
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@font-face {
+/* @font-face {
   font-family: 'CircularBold';
   src:url('../fonts/circular-std-bold.ttf');
   font-weight: normal;
@@ -50,6 +50,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 
 
 @font-face {
