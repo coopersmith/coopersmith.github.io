@@ -52,7 +52,20 @@
 }
 
 
- 
+@font-face {
+  font-family: 'NeutrafaceSlabTextTT-Bold';
+  src:url('../fonts/NeutrafaceSlabTextTT-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src:url('../fonts/TiemposText-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 /* Grid
@@ -168,7 +181,7 @@ h1 {
 	font-size: 4.8rem;
 	line-height: 1.0;
     font-weight: normal;
-    font-family: CircularBold, Helvetica, sans-serif;
+    font-family: NeutrafaceSlabTextTT-Bold, Helvetica, sans-serif;
     color: #3B6CA6;
 }
 
@@ -176,7 +189,7 @@ h2 {
 	font-size: 3.6rem;
 	line-height: 1.0;
     font-weight: normal;
-    font-family: CircularBook, Helvetica, sans-serif;
+    font-family: TiemposText-Regular, Helvetica, sans-serif;
     color: #3B6CA6;
     margin-top: -2%}
 }
