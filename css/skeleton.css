@@ -183,7 +183,7 @@ h1 {
 	line-height: 1.0;
     font-weight: normal;
     font-family: NeutrafaceSlabTextTT-Bold, Helvetica, sans-serif;
-    color: #3B6CA6;
+    color: #000;
 }
 
 h2 {
@@ -191,7 +191,7 @@ h2 {
 	line-height: 1.0;
     font-weight: normal;
     font-family: TiemposText-Regular, Helvetica, sans-serif;
-    color: #3B6CA6;
+    color: #000;
     margin-top: -2%}
 }
 
@@ -199,7 +199,7 @@ h3, h4 {
 	font-size: 2.4rem;
     font-weight: normal;
     font-family: CircularBook, Helvetica, sans-serif;
-    color: #3B6CA6;
+    color: #000;
     line-height: 1.0;
     text-align: left;
     padding-right: 0px;
