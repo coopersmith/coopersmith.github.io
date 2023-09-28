@@ -3,7 +3,7 @@ const apiKey = "c45fbeb0d318aac9d7698d798b639811"; // Replace with your Last.fm 
 const username = "coopersmith"; // Replace with your Last.fm username
 
 // API Endpoint to get top artists from Last.fm
-const lastFmApiUrl = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${username}&api_key=${apiKey}&format=json&period=3month&limit=5`;
+const lastFmApiUrl = `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${username}&api_key=${apiKey}&format=json&period=3month&limit=5`;
 
 // Fetch most recent artists from Last.fm
 fetch(lastFmApiUrl)
