@@ -45,3 +45,26 @@ fetch('https://api.readwise.io/v2/books/', {
 .catch(err => {
   console.log('Fetch Error:', err);
 });
+
+
+// Replace this URL with your Goodreads "currently-reading" RSS feed URL
+const proxy = "https://cors-anywhere.herokuapp.com/";
+const rssUrl = "https://www.goodreads.com/user/updates_rss/2816237?key=T90W9zRz_seNbNDQA-rm--q-lniLUkSQpLs72kiqrcM1Dlyp";
+
+fetch(rssUrl)
+  .then(response => response.text())
+  .then(data => {
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data, "text/xml");
+
+    const titles = Array.from(xml.querySelectorAll("item > title"))
+      .map(el => el.textContent);
+
+    // Create a comma-separated string of book titles
+    const commaSeparatedBooks = titles.join(", ");
+
+    // Display the data in the list item
+    const listItem = document.getElementById("currently-reading-item");
+    listItem.textContent = `Currently Reading: ${commaSeparatedBooks}`;
+  })
+  .catch(error => console.error("Error fetching data: ", error));
