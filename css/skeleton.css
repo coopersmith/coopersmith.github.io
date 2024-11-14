@@ -379,7 +379,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: disc outside; }
+  list-style: disc inside; }
 ol {
   list-style: decimal inside; }
 ol, ul {
